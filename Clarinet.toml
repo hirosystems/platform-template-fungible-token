@@ -15,6 +15,6 @@ epoch = 3.0
 
 [contracts.defi]
 path = 'contracts/extern/defi.clar'
-clarity_version = 2
-epoch = 2.5
+clarity_version = 3
+epoch = 3.0
 
