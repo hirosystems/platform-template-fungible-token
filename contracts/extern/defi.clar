@@ -4,8 +4,7 @@
 
 ;; contract can hold many different sip-10 tokens
 (define-public (get-balance (token <ft-token>))
-  ;; #[filter(token)]
-  (contract-call? token get-balance (as-contract tx-sender))
+  (contract-call? token get-balance current-contract)
 )
 
 ;; any user can release any sip-10 token
@@ -15,8 +14,5 @@
     (amount uint)
     (token <ft-token>)
   )
-  ;; #[filter(token)]
-  (contract-call? token transfer amount (as-contract tx-sender) contract-owner
-    none
-  )
+  (contract-call? token transfer amount current-contract contract-owner none)
 )
