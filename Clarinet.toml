@@ -10,11 +10,11 @@ contract_id = 'SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standa
 
 [contracts.fungible-token]
 path = 'contracts/fungible-token.clar'
-clarity_version = 3
-epoch = 3.0
+clarity_version = 4
+epoch = "latest"
 
 [contracts.defi]
 path = 'contracts/extern/defi.clar'
-clarity_version = 3
-epoch = 3.0
+clarity_version = 4
+epoch = "latest"
 

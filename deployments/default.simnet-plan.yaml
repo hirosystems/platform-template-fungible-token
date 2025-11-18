@@ -45,16 +45,20 @@ genesis:
       balance: "100000000000000"
       sbtc-balance: "1000000000"
   contracts:
+    - genesis
+    - lockup
+    - bns
+    - cost-voting
     - costs
     - pox
+    - costs-2
     - pox-2
+    - costs-3
     - pox-3
     - pox-4
-    - lockup
-    - costs-2
-    - costs-3
-    - cost-voting
-    - bns
+    - signers
+    - signers-voting
+    - costs-4
 plan:
   batches:
     - id: 0
@@ -71,13 +75,10 @@ plan:
             contract-name: defi
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/extern/defi.clar
-            clarity-version: 2
-      epoch: "2.5"
-    - id: 2
-      transactions:
+            clarity-version: 4
         - emulated-contract-publish:
             contract-name: fungible-token
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/fungible-token.clar
-            clarity-version: 3
-      epoch: "3.0"
+            clarity-version: 4
+      epoch: "3.3"
